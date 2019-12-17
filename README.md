@@ -1,4 +1,6 @@
 # JAVA_Projects
+-> LojaAquarios: Projeto pessoal que visa implementar um software para gerenciar uma loja de aquários levando em conta as especificidades do negócio. Até o presente momento o programa é capaz de adicionar e remover aquários da loja, incluir e excluir peixes dos aquários e imprimir o saldo da loja. Os peixes só podem ser adicionados em aquários que atendam suas necessidades de temperatura e pH. Há também um limite de peixes que pode ser comportado em cada aquário. Este limite é calculado usando a litragem do aquário, obtido através de suas dimensões.
+
 -> LojaTinta: Este projeto para disciplina de Programação Orientada a Objetos visou desenvolver um software para gerenciar uma rede de tintas. O programa é capaz de imprimir os vários tipos de produtos, precificando-os. Além disso, gera um orçamento para um cliente, e implementa um carrinho de compras para caso o cliente queira obter os produtos pela internet.
 
 -> SistemaArquivos:  Este projeto para disciplina de Programação Orientada a Objetos visou simular um sistema de arquivos composto de pastas e/ou arquivos. Pastas podem ter outras pastas e/ou arquivos internamente. Pastas e Arquivos possuem nomes. Arquivos também possuem um campo que informa o seu tamanho. O programa é capaz de adicionar e remover pastas e arquivos, além de informar o tamanho dos mesmos.
