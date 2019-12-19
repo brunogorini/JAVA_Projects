@@ -42,7 +42,7 @@ public class Aquario {
 
 	public void compraPeixe(Peixe p) throws Exception{
 		if((p.tempIdeal(this)) && (p.phIdeal(this))) {
-			if(peixes.size()<maxNumPeixes()) {
+			if(totalPeixes()<maxNumPeixes()) {
 				if(peixes.contains(p)) {
 					p.setQtd(p.getQtd()+1);
 				}else {
@@ -67,7 +67,7 @@ public class Aquario {
 
 	public void vendePeixe(Peixe p) throws Exception {
 		if(peixes.size()==0) {
-			throw new AquarioVazioException(String.format("Não há o que ser removido,"
+			throw new AquarioVazioException(String.format("Não há o que ser vendido,"
 					+ " pois aquario de %.1fL está vazio!", getLitragem()));
 		}else if(peixes.contains(p)) {
 			if(p.getQtd()==1) {
@@ -104,6 +104,14 @@ public class Aquario {
 
 	public double getSaldoParc() {
 		return this.saldoParc;
+	}
+	
+	public int totalPeixes() {
+		int total=0;
+		for(Peixe p : peixes) {
+			total+=p.getQtd();
+		}
+		return total;
 	}
 
 	public List<Peixe> getPeixes() {

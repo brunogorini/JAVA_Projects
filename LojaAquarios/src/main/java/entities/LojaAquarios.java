@@ -30,6 +30,10 @@ public class LojaAquarios {
 		this.nomeLoja = nomeLoja;
 	}
 
+	public List<Aquario> getAquarios() {
+		return aquarios;
+	}
+
 	public void adicionaAquario(Aquario a) {
 		aquarios.add(a);
 	}
@@ -79,25 +83,28 @@ public class LojaAquarios {
 	public static void main(String[] args) {
 		try {
 			LojaAquarios loja1 = new LojaAquarios("Happy Fish");
-			Aquario aqua1 =new Aquario(100.0, 20.0, 20.0, 7.0,25.0);
+			Aquario aqua1 =new Aquario(25.0, 25.0, 25.0, 7.5,25.0);
 			loja1.adicionaAquario(aqua1);
-			Peixe peixe1 = new Peixe("Poecilia reticulata","Guppy albino",6.5,7.5,20.0,30.0,10.0);
-			Peixe peixe2 = new Peixe("Poecilia reticulata","Guppy dumbo",6.5,7.5,20.0,30.0,20.0);
-			Peixe peixe3 = new Peixe("Xiphophorus hellerii","Espada sangue",6.5,7.5,20.0,30.0,30.0);
-			Peixe peixe4 = new Peixe("Poecilia latipinna","Molinesia balão",6.5,7.5,20.0,30.0,40.0);
+			Peixe peixe1 = new Peixe("Poecilia reticulata","Guppy albino", 7.0, 8.0, 18.0, 28.0, 10.0);
+			Peixe peixe2 = new Peixe("Xiphophorus hellerii","Espada sangue", 7.0, 8.0, 22.0, 28.0, 9.0);
+			Peixe peixe3 = new Peixe("Poecilia latipinna","Molinesia balão", 7.0, 8.0, 20.0, 30.0, 15.0);
 
+			//Enche estoque
+			aqua1.compraPeixe(peixe1);
+			aqua1.compraPeixe(peixe1);
 			aqua1.compraPeixe(peixe1);
 			aqua1.compraPeixe(peixe2);
+			aqua1.compraPeixe(peixe2);
 			aqua1.compraPeixe(peixe3);
-			aqua1.compraPeixe(peixe4);
-			aqua1.compraPeixe(peixe4);
-
 			System.out.print(loja1);
+			
+			//Esvazia estoque
+			aqua1.vendePeixe(peixe1);
+			aqua1.vendePeixe(peixe1);
 			aqua1.vendePeixe(peixe1);
 			aqua1.vendePeixe(peixe2);
+			aqua1.vendePeixe(peixe2);
 			aqua1.vendePeixe(peixe3);
-			aqua1.vendePeixe(peixe4);
-			aqua1.vendePeixe(peixe4);
 			System.out.print(loja1);
 
 		}catch(Exception e){

@@ -1,0 +1,10 @@
+C:\Users\NIPPON\eclipse-workspace\LojaAquarios\src\main\java\exceptions\AquarioNaoVazioException.java
+C:\Users\NIPPON\eclipse-workspace\LojaAquarios\src\main\java\exceptions\AquarioVazioException.java
+C:\Users\NIPPON\eclipse-workspace\LojaAquarios\src\main\java\entities\LojaAquarios.java
+C:\Users\NIPPON\eclipse-workspace\LojaAquarios\src\main\java\exceptions\AquarioCheioException.java
+C:\Users\NIPPON\eclipse-workspace\LojaAquarios\src\main\java\entities\Aquario.java
+C:\Users\NIPPON\eclipse-workspace\LojaAquarios\src\main\java\entities\Peixe.java
+C:\Users\NIPPON\eclipse-workspace\LojaAquarios\src\main\java\exceptions\PeixeNaoEncontradoException.java
+C:\Users\NIPPON\eclipse-workspace\LojaAquarios\src\main\java\exceptions\PhNaoIdealException.java
+C:\Users\NIPPON\eclipse-workspace\LojaAquarios\src\main\java\exceptions\TempPhNaoIdealException.java
+C:\Users\NIPPON\eclipse-workspace\LojaAquarios\src\main\java\exceptions\TemperaturaNaoIdealException.java

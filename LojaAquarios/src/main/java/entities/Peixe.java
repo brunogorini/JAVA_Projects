@@ -9,7 +9,7 @@ public class Peixe {
 	private double tempMax;
 	private int qtd=1;
 	private double precoCompra;
-	private double taxaLucro = 1.25;
+	private double taxaLucro = 1.5;
 
 	public Peixe(String especie, String nomePopular, double phMin, double phMax,
 			double tempMin,	double tempMax, double precoCompra) {

@@ -7,4 +7,5 @@ public class AquarioNaoVazioException extends Exception {
 	public AquarioNaoVazioException(String message) {
 		super(message);
 	}
+
 }
